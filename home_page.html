@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../final_project/styles.css" />
+    <link rel="stylesheet" href="../final_project/home_page.css" />
+    <title>Chloe Holland</title>
+</head>
+
+<body>
+    <div class="navbar-wrapper">
+        <nav class="navbar">
+            <img href="#" />
+            <!-- <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content"> -->
+            <ul class="nav-list">
+                <li class="list-item">
+                    <a class="nav-link" href="#about"> About</a>
+                </li>
+                <li class="list-item">
+                    <a class="nav-link" href="#prev-work">Work</a>
+                </li>
+                <li class="list-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="list-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <!-- </div>
+            </div> -->
+        </nav>
+    </div>
+
+    <div id="about">
+        <!-- <h1>ABOUT</h1> -->
+        <img class="image" src="picture.jpeg" alt="image of Chloe" width="200" height="200" />
+        <h1>Hello, I'm Chloe!</h1>
+        <p class="text">
+            I am a student at Portland State University studying Computer Science. I first started programming when I joined the robotics team my junior year of high school and grew very fond of programming that I decided to go to school for it! However, I am not
+            just a student but an employee too and have been since my senior year of high school. I started out as a professional popcorn scooper at Regal Evergreen theater and have worked my way up to a receptionist at Acumed. These experiences taught
+            me hard work ethics that I brought with me into my first job in my desired career path as a tutor for the CS lab at PSU. Now, I currently intern in the PCEP program at NWEA and Springbrook. All of these work experiences have taught me very
+            valuable lessons and at times I feel I am living my life at a full sprint. I'm very thankful for my family and friends for being my pillars and I'm grateful for the opportunities I've had and eager to experience more!
+        </p>
+    </div>
+    <div id="prev-work">
+        <h1>PREVIOUS WORK</h1>
+        <h2>Internship - Springbrook</h2>
+        <h3>January 2022 - Current</h3>
+        <p>
+            At Springbrook I am apart of the payments team and work on their product, Civic Pay Online. I've been doing both front end and back end web development in C# and use tools like Visual Studio, Azure Devops, SQL, and Windows Powershell.
+        </p>
+        <h2>Internship- NWEA</h2>
+        <h3>July 2021 - December 2021</h3>
+        <p>
+            At NWEA, I was apart of the performance team and did pet projects for the group. I used python to write automation scripts to query their postgresql database and used Grafana and New Relic API to generate data, store in their database, and display data
+            in a series of graphs in Grafana.
+        </p>
+        <h2>Tutor - Portland State University</h2>
+        <h3>November 2020 - August 2021</h3>
+        <p>
+            Assisted students in my university's computer science lower division courses with their course work. Primarily helped people develop code in C++, Java, and C, and tutored topics such as conditionals, loops, data structures, inheritance, dynamic binding,
+            operator overloading, etc
+        </p>
+        <h2>Internship - Clarus Water Solutions</h2>
+        <h3>March 2020 - May 2020</h3>
+        <p>
+            Assist and Observe company functions while learning about their database system using MySQL.
+        </p>
+        <h2>Receptionist - Acumed</h2>
+        <h3>November 2019 - February 2020</h3>
+        <p>
+            Perform basic office duties including answering multi-line phones, greeting guests upon arrival, and sorting mail.
+        </p>
+        <h2>Retail Associate - Nike Company Store</h2>
+        <h3>February 2019 - September 2019</h3>
+        <p>
+            A description that is the descriptionyist that I will write later because blah I probably won't even add this agh
+        </p>
+        <h2>Floor Staff - Regal Evergreen Parkway</h2>
+        <h3>June 2017 - February 2019</h3>
+        <p>
+            A description that is the descriptionyist that I will write later because blah I probably won't even add this agh
+        </p>
+    </div>
+    <div id="projects">
+        <h1>PROJECTS</h1>
+        <h2>Inheritance Excerise - Card Game</h2>
+        <p>
+            When studying object-oriented programming in one of my classes, I wrote a collection of card games in c++ for users to play. Group up with a team of people and verse each other in blackjack, slap jack, or guess the card! Navigate through menus and play
+            a textbase game. You can view the leaderboard by viewing all displaying the players, remove players when they start crushing you, add and remove games to the queue to play, and lastly but most importantly play the games! Be wary of the segfaults
+            you might encounter and good luck playing the games because I never added instructions.
+        </p>
+        <h2>Steam Game Finder</h2>
+        <p>
+            The steam game finder discord bot that I created during a WiCS hackathon allows you to find shared games between your friends. I forget if this is fully fleshed out because I know some of my group members wanted to continue working on it after the fact,
+            and I also am not completely positive if the steam side of this works. However, with just a weekend to work on this, our bot is pretty cool!
+        </p>
+        <h2>Robotics</h2>
+        <p>description to be added later with pictures of my robot :D</p>
+    </div>
+    <div id="contact">
+        <h1>CONTACT</h1>
+        <form>
+            <label class="label" for="name">Name: </label>
+            <input type="text" name="Name" id="name" /> <br />
+            <label class="label" for="email">Email: </label>
+            <input type="email" name="Email" id="email" /> <br />
+            <label class="label" for="date">Date: </label>
+            <input type="date" name="Date" id="date" /> <br />
+            <label class="label" for="message">Message: </label>
+            <input type="text" name="Message" id="message" /> <br />
+            <div class="btn">
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
