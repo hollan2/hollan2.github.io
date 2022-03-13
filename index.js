@@ -1,5 +1,5 @@
 function showAndHide(className) {
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 5; i++) {
         let str = 'descr' + i;
         let tab = 'tab' + i;
         if (str == className) {

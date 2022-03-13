@@ -33,27 +33,24 @@
     font-weight: bold;
 }
 
-@media (min-width: 1025px) {
+@media (max-width: 299px) {
+    .descriptions {
+        border: none;
+        height: auto;
+    }
+    .tab {
+        width: 90px;
+        font-size: x-small;
+        padding: 18px;
+    }
     .job-title {
-        font-size: xx-large;
+        font-size: smaller;
     }
     .job-date {
-        font-size: large;
+        font-size: x-small;
     }
     .job-descr {
-        font-size: larger;
-    }
-}
-
-@media (min-width: 516px) and (max-width: 1024px) {
-    .job-title {
-        font-size: x-large;
-    }
-    .job-date {
-        font-size: medium;
-    }
-    .job-descr {
-        font-size: large;
+        font-size: smaller;
     }
 }
 
@@ -77,23 +74,26 @@
     }
 }
 
-@media (max-width: 299px) {
-    .descriptions {
-        border: none;
-        height: auto;
-    }
-    .tab {
-        width: 90px;
-        font-size: x-small;
-        padding: 18px;
-    }
+@media (min-width: 516px) and (max-width: 1024px) {
     .job-title {
-        font-size: smaller;
+        font-size: x-large;
     }
     .job-date {
-        font-size: x-small;
+        font-size: medium;
     }
     .job-descr {
-        font-size: smaller;
+        font-size: large;
+    }
+}
+
+@media (min-width: 1025px) {
+    .job-title {
+        font-size: xx-large;
+    }
+    .job-date {
+        font-size: large;
+    }
+    .job-descr {
+        font-size: larger;
     }
 }

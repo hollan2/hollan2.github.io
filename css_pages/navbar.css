@@ -1,0 +1,40 @@
+.navbar-wrapper {
+    width: 100%;
+    height: auto;
+    background-color: var(--primary);
+    position: fixed;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    height: 50px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+    padding: 0;
+}
+
+.list-item {
+    display: inline-block;
+}
+
+.nav-link {
+    display: block;
+    padding: 1em;
+    background-color: lightgray;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: var(--secondary);
+    color: white;
+}
