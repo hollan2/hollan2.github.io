@@ -1,0 +1,13 @@
+#about {
+    text-align: center;
+    padding-top: 5em;
+}
+
+#about .image {
+    border-radius: 100%;
+}
+
+#about .text {
+    text-align: left;
+    font-size: large;
+}

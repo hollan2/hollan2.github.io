@@ -21,21 +21,8 @@ h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#about {
-    text-align: center;
-    padding-top: 1em;
-}
 
-#about .image {
-    border-radius: 100%;
-}
-
-#about .text {
-    text-align: left;
-    font-size: large;
-}
-
-.header-button {
+/* .header-button {
     border: none;
     background-color: var(--primary);
     width: 40px;
@@ -43,4 +30,4 @@ h2 {
 
 .header-button:hover {
     background-color: var(--secondary);
-}
+} */
