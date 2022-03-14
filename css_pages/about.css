@@ -1,6 +1,6 @@
 #about {
     text-align: center;
-    padding-top: 5em;
+    padding-top: 2em;
 }
 
 #about .image {
@@ -13,4 +13,9 @@
 #about .text {
     text-align: left;
     font-size: large;
+}
+
+.greeting {
+    color: var(--text);
+    font-weight: bold;
 }

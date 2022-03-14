@@ -1,24 +1,16 @@
-h1 {
-    color: #444444;
+body {
+    background-color: var(--primarylight);
 }
 
 .section-header {
+    color: var(--text);
     padding-top: 0.75em;
     padding-bottom: 0.25em;
     font-weight: bolder;
 }
 
-body {
-    background-color: var(--primarylight);
-    /* padding-top: 2em; */
-    /* display: grid;
-    grid-template-rows: repeat(5, 3fr); */
-}
-
 h2 {
-    /* padding-top: 0.75em; */
-    color: #444444;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--text);
 }
 
 

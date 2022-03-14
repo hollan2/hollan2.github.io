@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css_pages/about.css" />
     <link rel="stylesheet" href="css_pages/contact.css" />
-    <link rel="stylesheet" href="css_pages/navbar.css" />
+    <link rel="stylesheet" href="css_pages/header.css" />
     <link rel="stylesheet" href="css_pages/prev_work.css" />
     <link rel="stylesheet" href="css_pages/projects.css" />
     <link rel="stylesheet" href="css_pages/shared.css" />
@@ -19,47 +19,46 @@
 </head>
 
 <body>
-    <div class="navbar-wrapper">
-        <nav class="navbar">
-            <a href="#about"><img src="images/header_image.jpg" alt="logo" width="300" height="40" class="header-img" /></a>
-            <div class="dropdown">
-                <button type="button" class="menu-btn" onclick="changeImage()">
-            <img
-              src="images/menu_button.jpg"
-              alt="menu button"
-              width="40"
-              height="40"
-              class="menu-btn-img"
-            />
-          </button>
-                <div class="dropdown-content">
-                    <!-- <ul class="nav-list">
-                        <li class="list-item"> -->
+    <header>
+        <div class="header-decor">
+            <img src="images/header_image.jpg" alt="logo" width="300" height="40" class="header-img" />
+            <button type="button" class="cat-btn" onclick="changeImage()">
+          <img
+            src="images/cat_button.jpg"
+            alt="cat"
+            width="40"
+            height="40"
+            class="cat-btn-img"
+          />
+        </button>
+        </div>
+        <div class="navbar">
+            <ul class="nav-list">
+                <li class="list-item">
                     <a class="nav-link" href="#about"> About</a>
-                    <!-- </li>
-                        <li class="list-item"> -->
+                </li>
+                <li class="list-item">
                     <a class="nav-link" href="#prev-work">Work</a>
-                    <!-- </li>
-                        <li class="list-item"> -->
+                </li>
+                <li class="list-item">
                     <a class="nav-link" href="#projects">Projects</a>
-                    <!-- </li>
-                        <li class="list-item"> -->
+                </li>
+                <li class="list-item">
                     <a class="nav-link" href="#contact">Contact</a>
-                    <!-- </li>
-                    </ul> -->
-                </div>
-            </div>
-        </nav>
-    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
 
     <div id="about" class="container">
         <img class="image" src="images/self_portrait.jpeg" alt="image of Chloe" width="200" height="200" />
-        <h1>Hello, I'm Chloe!</h1>
+        <h1 class="greeting">Hello, I'm Chloe!</h1>
         <p class="text">
             I am a student at Portland State University studying Computer Science. I first started programming when I joined the robotics team my junior year of high school and grew very fond of programming that I decided to go to school for it! However, I am not
             just a student but an employee too and have been since my senior year of high school. I started out as a professional popcorn scooper at Regal Evergreen theater and have worked my way up to a receptionist at Acumed. These experiences taught
-            me hard work ethics that I brought with me into my first job in my desired career path as a tutor for the CS lab at PSU. Now, I currently intern in the PCEP program and I've worked at NWEA and Springbrook. All of these work experiences have
-            taught me very valuable lessons and at times I feel I am living my life at a full sprint. I'm very thankful for my family and friends for being my pillars and I'm grateful for the opportunities I've had and eager to experience more!
+            me hard work ethic that I brought with me into my first job in my desired career path as a tutor for the CS lab at PSU. Now, I currently intern in the PCEP program and I've worked at NWEA and Springbrook. All of these work experiences have
+            taught me very valuable lessons about balancign work, school, and home life because at times I feel I am living my life at a full sprint. I'm very thankful for my family and friends for being my pillars and I'm grateful for the opportunities
+            I've had and eager to experience more!
         </p>
     </div>
     <div id="prev-work" class="container">
