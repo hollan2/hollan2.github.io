@@ -6,11 +6,19 @@
 }
 
 .navbar {
-    display: grid;
-    grid-template-columns: 9fr 1fr;
     height: 50px;
-    align-items: center;
     overflow: hidden;
+}
+
+.header-img {
+    text-align: left;
+}
+
+.menu-btn {
+    text-align: right;
+    background-color: var(--primary);
+    border: none;
+    margin-right: 20px;
 }
 
 .dropdown {

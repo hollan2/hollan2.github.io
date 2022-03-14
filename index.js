@@ -12,3 +12,12 @@ function showAndHide(className) {
         }
     }
 }
+
+function changeImage() {
+    let img = document.getElementsByClassName('menu-btn-img')[0];
+    let str = img.src;
+    let res = str.search('menu_button_altered.jpg');
+    if (res >= 0) {
+        img.src = 'images/menu_button.jpg';
+    } else img.src = 'images/menu_button_altered.jpg';
+}

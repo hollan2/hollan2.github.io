@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css_pages/about.css" />
     <link rel="stylesheet" href="css_pages/contact.css" />
     <link rel="stylesheet" href="css_pages/navbar.css" />
@@ -20,14 +21,15 @@
 <body>
     <div class="navbar-wrapper">
         <nav class="navbar">
-            <a href="#about"><img src="images/header_image.jpg" alt="logo" width="300" height="40" /></a>
+            <a href="#about"><img src="images/header_image.jpg" alt="logo" width="300" height="40" class="header-img" /></a>
             <div class="dropdown">
-                <button type="button" class="header-button">
+                <button type="button" class="menu-btn" onclick="changeImage()">
             <img
               src="images/menu_button.jpg"
               alt="menu button"
               width="40"
               height="40"
+              class="menu-btn-img"
             />
           </button>
                 <div class="dropdown-content">
@@ -113,45 +115,68 @@
     </div>
     <div id="projects" class="container">
         <h1 class="section-header">Projects</h1>
-        <h2>Inheritance Excerise - Card Game</h2>
+        <div class="project-header">
+            <h2 class="title">Card Games</h2>
+            <a href="https://github.com/hollan2/card_game_inheritance_exercise" class="github-link"><i class="fa fa-github"></i
+        ></a>
+        </div>
         <p>
             When studying object-oriented programming in one of my classes, I wrote a collection of card games in c++ for users to play. Group up with a team of people and verse each other in blackjack, slap jack, or guess the card! Navigate through .menus and play
             a textbase game. You can view the leaderboard by viewing all displaying the players, remove players when they start crushing you, add and remove games to the queue to play, and lastly but most importantly play the games! Be wary of the segfaults
             you might encounter and good luck playing the games because I never added instructions.
         </p>
-        <h2>Steam Game Finder</h2>
+        <div class="project-header">
+            <h2 class="title">Steam Game Finder</h2>
+            <a href="https://github.com/hollan2/Steam_game_finder" class="github-link"><i class="fa fa-github"></i
+        ></a>
+        </div>
         <p>
-            The steam game finder discord bot that I created during a WiCS hackathon allows you to find shared games between your friends. I forget if this is fully fleshed out because I know some of my group members wanted to continue working on it after the fact,
-            and I also am not completely positive if the steam side of this works. However, with just a weekend to work on this, our bot is pretty cool!
+            A group and I got together for the WiCS hackathon and created a discord bot in a weekend! We combined the Steam API and Discord API to peak at your Steam library and share the games you and your friends have in common to find games to play together. In
+            order to use the bot, you'll have to register and give your Steam username and you'll be on your way!
         </p>
-        <h2>Robotics</h2>
-        <p>description to be added later with pictures of my robot :D</p>
+        <h2 class="title">Robotics</h2>
+        <p>
+            In high school, I joined my high school's robotics team that was a part of the FIRST Tech Challenge. Every year, we designed a robot to compete in the current year's challenge programming an autonomous and driver mode and creating mechanical components
+            to launch wiffle balls, for example, or sensors to read color of a beacon. I worked on the programming team and worked on the autonomous mode of the robot so the robot could perform tasks by itself. One of the programs that I worked on navigated
+            to a white line on the field, followed the line, and sensed the color of the beacon and pushed the corresponding color for the team we were on.
+        </p>
+        <a href="https://www.firstinspires.org/" class="robotics-link">Learn about FIRST!</a
+      >
     </div>
     <div id="contact" class="container">
-        <div class="form">
-            <h1 class="form-header">Contact Me!</h1>
-            <form>
-                <div class="inputs">
-                    <div class="name">
-                        <label class="label" for="name">Name </label><br />
-                        <input type="text" name="Name" id="name" placeholder="What's your name?" />
-                    </div>
-                    <div class="email">
-                        <label class="label" for="email">Email </label><br />
-                        <input type="email" name="Email" id="email" placeholder="example@email.com" />
-                    </div>
-                    <div class="message">
-                        <label class="label" for="message">Message </label><br />
-                        <textarea id="message" placeholder="Let's chat!"></textarea>
-                    </div>
-                </div>
-                <div class="btn">
-                    <input type="submit" class="submit-btn" value="Submit" />
-                    <input type="reset" class="reset-btn" value="Reset" />
-                </div>
-            </form>
-        </div>
+      <div class="form">
+        <h1 class="form-header">Contact Me!</h1>
+        <form>
+          <div class="inputs">
+            <div class="name">
+              <label class="label" for="name">Name </label><br />
+              <input
+                type="text"
+                name="Name"
+                id="name"
+                placeholder="What's your name?"
+              />
+            </div>
+            <div class="email">
+              <label class="label" for="email">Email </label><br />
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="example@email.com"
+              />
+            </div>
+            <div class="message">
+              <label class="label" for="message">Message </label><br />
+              <textarea id="message" placeholder="Let's chat!"></textarea>
+            </div>
+          </div>
+          <div class="btn">
+            <input type="submit" class="submit-btn" value="Submit" />
+            <input type="reset" class="reset-btn" value="Reset" />
+          </div>
+        </form>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
